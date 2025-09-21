@@ -1,5 +1,12 @@
+import 'package:angrygpt/Chat%20Pages/angryGPT.dart';
+import 'package:angrygpt/Chat%20Pages/lolaAIPage.dart';
 import 'package:angrygpt/ProFile/mainProfile.dart';
+import 'package:angrygpt/Side%20Bar/sideBar2.dart';
 import 'package:flutter/material.dart';
+
+import '../Chat Pages/mimiAI.dart';
+import '../Payment Details/subcriptionPage.dart';
+import '../Side Bar/sidebar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       "tag": "Free",
       "emojiImage": "assets/objects/OBJECTS.png",
       "premium": false,
-      "page": ""
+      "page": AngryGPTPage()
     },
     {
       "title": "Visit Shop",
@@ -27,7 +34,7 @@ class HomeScreen extends StatelessWidget {
       "tag": "Premium",
       "emojiImage": "assets/objects/lovly1.png",
       "premium": true,
-      "page": ""
+      "page": MiMiAiPage()
     },
     {
       "title": "Lola",
@@ -35,7 +42,7 @@ class HomeScreen extends StatelessWidget {
       "tag": "Premium",
       "emojiImage": "assets/objects/lovly.png",
       "premium": true,
-      "page": ""
+      "page": LolaAipagePage()
     },
   ];
 
@@ -73,7 +80,9 @@ class HomeScreen extends StatelessWidget {
                   const Spacer(),
                   IconButton(
                     icon: const Icon(Icons.menu),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Sidebar()));
+                    },
                   )
                 ],
               ),
@@ -183,7 +192,9 @@ class HomeScreen extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>SubscriptionPage()));
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFB2FF00),
                           foregroundColor: Colors.black,

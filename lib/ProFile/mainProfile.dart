@@ -1,6 +1,10 @@
 import 'package:angrygpt/App%20Screen/homeScreen.dart';
+import 'package:angrygpt/Payment%20Details/paymentPage.dart';
 import 'package:angrygpt/ProFile/profileInfo.dart';
+import 'package:angrygpt/Side%20Bar/sideBar2.dart';
 import 'package:flutter/material.dart';
+
+import '../Setting Content/log_Out_Content.dart';
 
 class Mainprofile extends StatelessWidget {
   const Mainprofile({super.key});
@@ -55,13 +59,17 @@ class Mainprofile extends StatelessWidget {
             leading: Image.asset("assets/icons/wallet-2.png",color: Colors.white,),
             title: const Text("Payment"),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.white),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>PaymentPage()));
+            },
           ),
           ListTile(
             leading: Image.asset("assets/icons/setting-2.png",color: Colors.white,),
             title: const Text("Settings"),
             trailing: const Icon(Icons.arrow_forward_ios, size: 16, color: Colors.white),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>SideBar2()));
+            },
           ),
 
           // Logout
@@ -71,7 +79,9 @@ class Mainprofile extends StatelessWidget {
               "Logout",
               style: TextStyle(color: Colors.red),
             ),
-            onTap: () {},
+            onTap: () {
+                showLogoutBottomSheet(context);
+                },
           ),
           const SizedBox(height: 20),
         ],
