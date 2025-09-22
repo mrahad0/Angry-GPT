@@ -11,7 +11,7 @@ import '../Side Bar/sidebar.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  // Chat cards list with PNG emoji + page reference
+  // Chat cards list for cards
   final List<Map<String, dynamic>> chatCards = const [
     {
       "title": "Angry GPT",
@@ -56,10 +56,9 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top Bar
+              // Top Bar for profile & SideBar
               Row(
                 children: [
-                  // CircleAvatar tappable
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -168,7 +167,7 @@ class HomeScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // Premium Upsell
+              // Premium Option use
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(20),
@@ -226,8 +225,8 @@ class ChatCard extends StatelessWidget {
   final String description;
   final String? tag;
   final bool premium;
-  final String? emoji;      // optional system emoji
-  final String? emojiImage; // custom PNG emoji
+  final String? emoji;
+  final String? emojiImage;
 
   const ChatCard({
     super.key,

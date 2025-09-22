@@ -41,7 +41,7 @@ void showLogoutBottomSheet(BuildContext context) {
                       padding: const EdgeInsets.symmetric(vertical: 12),
                     ),
                     onPressed: () {
-                      Navigator.pop(context); // Cancel এ চাপলে শুধু bottomsheet বন্ধ হবে
+                      Navigator.pop(context);
                     },
                     child: const Text("Cancel"),
                   ),
@@ -57,8 +57,7 @@ void showLogoutBottomSheet(BuildContext context) {
                       padding: const EdgeInsets.symmetric(vertical: 12),
                     ),
                     onPressed: () {
-                      Navigator.pop(context); // Dialog বন্ধ হবে
-                      // 👉 এখানে তোমার logout logic দেবে
+                      Navigator.pop(context);
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(content: Text("Logged out")),
                       );

@@ -12,7 +12,7 @@ class ResetOTP extends StatelessWidget {
         leading:IconButton(
           icon: Icon(Icons.arrow_back_ios, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); // This navigates back
+            Navigator.pop(context);
           },
         ),
         backgroundColor: Colors.black,
@@ -40,7 +40,7 @@ class ResetOTP extends StatelessWidget {
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Text(
-                    '1', // Dummy code, make this dynamic for user input
+                    '1', // Dummy code
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -56,7 +56,7 @@ class ResetOTP extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>ResetPass()));
-                //verification logic here
+                //navigate to resetpass page
               },
               style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.black,

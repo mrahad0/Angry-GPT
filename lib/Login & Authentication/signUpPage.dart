@@ -20,7 +20,7 @@ class Signuppage extends StatelessWidget {
               // Logo
               Center(
                 child: Image.asset(
-                  "assets/logo/Group 354.png", // replace with your logo file
+                  "assets/logo/Group 354.png",
                   height: 100,
                 ),
               ),

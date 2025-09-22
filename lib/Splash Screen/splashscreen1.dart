@@ -13,7 +13,7 @@ class _Splashscreen1 extends State<Splashscreen1> {
   void initState() {
     super.initState();
 
-    // Wait 2 seconds
+    // Wait 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,

@@ -12,7 +12,7 @@ class Sidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: const Color(0xFF1E1E1E), // match sidebar dark color
+      backgroundColor: const Color(0xFF1E1E1E), //Dark color
       child: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

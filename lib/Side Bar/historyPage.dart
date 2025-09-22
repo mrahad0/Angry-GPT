@@ -36,7 +36,7 @@ class HistoryPage extends StatelessWidget {
               // List of chats
               Expanded(
                 child: ListView.builder(
-                  itemCount: 10, // Example number of chats
+                  itemCount: 10,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(vertical: 6.0),

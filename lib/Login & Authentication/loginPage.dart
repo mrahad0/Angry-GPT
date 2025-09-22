@@ -3,6 +3,8 @@ import 'package:angrygpt/Login%20&%20Authentication/forgotPage.dart';
 import 'package:angrygpt/Login%20&%20Authentication/signUpPage.dart';
 import 'package:flutter/material.dart';
 
+import '../Button/buttonStyle.dart';
+
 class Loginpage extends StatelessWidget {
   const Loginpage({super.key});
 
@@ -18,10 +20,10 @@ class Loginpage extends StatelessWidget {
               children: [
                 const SizedBox(height: 30),
 
-                // App Logo
+                //Logo
                 Center(
                   child: Image.asset(
-                    "assets/logo/Group 354.png", // Replace with your logo
+                    "assets/logo/Group 354.png",
                     height: 100,
                   ),
                 ),
@@ -154,15 +156,4 @@ class Loginpage extends StatelessWidget {
   }
 }
 
-// Reusable social login button
-Widget socialLoginButton(String imagePath) {
-  return Container(
-    padding: const EdgeInsets.all(12),
-    decoration: BoxDecoration(
-      border: Border.all(color: Colors.yellow),
-      borderRadius: BorderRadius.circular(12),
-    ),
-    child: Image.asset(imagePath, height: 30),
-  );
-}
 

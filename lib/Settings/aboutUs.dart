@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Button/buttonStyle.dart';
+
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
 
@@ -29,7 +31,6 @@ class AboutUsPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Yellow Highlight Title
               Text(
                 "About Angry GPT",
                 style: TextStyle(
@@ -41,7 +42,6 @@ class AboutUsPage extends StatelessWidget {
 
               SizedBox(height: 16),
 
-              // Mission Statement
               Text(
                 "Mission Statement",
                 style: TextStyle(
@@ -62,7 +62,6 @@ class AboutUsPage extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              // Why We Built This
               Text(
                 "Why We Built This",
                 style: TextStyle(
@@ -91,29 +90,3 @@ class AboutUsPage extends StatelessWidget {
   }
 }
 
-// 🔹 Custom widget for bullet point
-class BulletText extends StatelessWidget {
-  final String text;
-  const BulletText({super.key, required this.text});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text("•  ",
-            style: TextStyle(color: Colors.white70, fontSize: 16)),
-        Expanded(
-          child: Text(
-            text,
-            style: const TextStyle(
-              color: Colors.white70,
-              fontSize: 17,
-              height: 1.5,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}

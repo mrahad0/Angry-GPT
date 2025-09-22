@@ -12,7 +12,7 @@ class ResetPass extends StatelessWidget {
           leading:IconButton(
           icon: Icon(Icons.arrow_back_ios, color: Colors.white),
           onPressed: () {
-             Navigator.pop(context); // This navigates back
+             Navigator.pop(context);
                  },
               ),
           backgroundColor: Colors.black,

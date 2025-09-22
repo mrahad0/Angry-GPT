@@ -148,7 +148,7 @@ class _ChatPageState extends State<AngryGPTPage> {
             ),
           ),
 
-          // AI Quick Select Buttons
+          // Quick Select Buttons
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: aiList.map((ai) {

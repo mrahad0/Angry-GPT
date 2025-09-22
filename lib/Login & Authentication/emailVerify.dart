@@ -11,7 +11,7 @@ class EmailVerify extends StatelessWidget {
         leading:IconButton(
           icon: Icon(Icons.arrow_back_ios, color: Colors.white),
           onPressed: () {
-            Navigator.pop(context); // This navigates back
+            Navigator.pop(context);
           },
         ),
         backgroundColor: Colors.black,
@@ -26,10 +26,10 @@ class EmailVerify extends StatelessWidget {
           children: [
             const SizedBox(height: 40),
 
-            // Mockup Logo (Replace with actual image)
+            //Logo
             Center(
               child: Image.asset(
-                'assets/logo/Group 354.png', // Replace with your logo asset
+                'assets/logo/Group 354.png',
                 height: 80,
               ),
             ),
@@ -49,7 +49,7 @@ class EmailVerify extends StatelessWidget {
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Text(
-                    '1', // Dummy code, make this dynamic for user input
+                    '1', //dummy txt code
                     style: TextStyle(
                       fontSize: 24,
                       color: Colors.white,
@@ -65,7 +65,7 @@ class EmailVerify extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Loginpage()));
-                //verification logic here
+                //back to loging page
               },
               style: ElevatedButton.styleFrom(
                 foregroundColor: Colors.black,

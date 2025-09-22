@@ -26,11 +26,11 @@ class PaymentPage extends StatelessWidget {
           children: [
             buildTextField("Card Holder Name", "Susan Flores"),
             const SizedBox(height: 16),
-            buildTextField("Card Number", "2222 4444 6666 7777"),
+            buildTextField("Card Number", "1111 2222 3333 4444"),
             const SizedBox(height: 16),
-            buildTextField("Expire Date", "28 / 02 / 25"),
+            buildTextField("Expire Date", "15 / 06 / 26"),
             const SizedBox(height: 16),
-            buildTextField("CV", "755"),
+            buildTextField("CV", "565"),
             const Spacer(),
             SizedBox(
               width: double.infinity,

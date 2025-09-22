@@ -26,7 +26,7 @@ class PrivacyPolicyPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Section 1
+
               Text("1. Types of Data We Collect",
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
               SizedBox(height: 8),
@@ -35,7 +35,6 @@ class PrivacyPolicyPage extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              // Section 2
               Text("2. Use of Your Personal Data",
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
               SizedBox(height: 8),
@@ -44,7 +43,6 @@ class PrivacyPolicyPage extends StatelessWidget {
 
               SizedBox(height: 20),
 
-              // Section 3
               Text("3. Third-Party Services",
                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
               SizedBox(height: 8),

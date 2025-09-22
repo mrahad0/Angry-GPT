@@ -16,11 +16,10 @@ class Splashscreen2 extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // Illustration
               Expanded(child:
                  Center(
                   child: Image.asset(
-                    "assets/logo/Illustration.png", // <-- replace with your illustration
+                    "assets/logo/Illustration.png",
 
                     width: double.infinity,
                   ),
@@ -58,7 +57,7 @@ class Splashscreen2 extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // Button (Navigate to Login)
+              // Button
               SizedBox(
                 width: double.infinity,
                 height: 55,

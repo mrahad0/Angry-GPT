@@ -65,7 +65,6 @@ class _SubscriptionPageState extends State<SubscriptionPage> {
             ),
             const SizedBox(height: 16),
 
-            // Yearly Plan
             buildPlanCard(
               title: "\$79.99",
               subtitle: "/yr",
